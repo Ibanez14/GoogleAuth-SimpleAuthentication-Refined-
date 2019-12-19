@@ -37,33 +37,24 @@ namespace Google_webAPI
 
             services.AddCors();
 
-            services.AddAuthentication()
-                    .AddCookie(ops => ops.LoginPath = "/api/values/login")
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                    .AddCookie("Cookies")
                     .AddGoogle(ops =>
                     {
                         ops.ClientId = "1061433997967-955692qk7fe7lq58tn6vi0hl8ba7t1on.apps.googleusercontent.com";
                         ops.ClientSecret = "xq65BxymyUab6-vSVLIvR4ii";
-                        ops.CallbackPath = "/googlesignin"; 
-
-                        ops.Events.OnCreatingTicket = context =>
-                        {
-                            context.HttpContext.User = context.Principal;
-                            context.HttpContext.Response.Redirect("https://localhost:5051/googlesignin");
-                            #region Leftovers
-                            value = context.AccessToken;
-
-                            //This also works in case above redirection won't work
-                            //context.Backchannel.GetAsync("https://localhost:5051/googlesignin");
-
-                            #endregion
-                            return Task.CompletedTask;
-                        };
+                        ops.CallbackPath = "/auth/registerexternal";
                         ops.Events.OnTicketReceived = context =>
                         {
                             context.SkipHandler();
                             return Task.CompletedTask;
                         };
                     });
+
+
+
+
+
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
@@ -83,10 +74,10 @@ namespace Google_webAPI
 
             app.UseAuthentication();
 
-            app.UseCors(ops =>
-            {
-                ops.AllowAnyOrigin().AllowAnyMethod();
-            });
+            //app.UseCors(ops =>
+            //{
+            //    ops.AllowAnyOrigin().AllowAnyMethod();
+            //});
 
 
             app.UseHttpsRedirection();
