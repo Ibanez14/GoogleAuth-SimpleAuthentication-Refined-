@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 
 namespace Google_MVC.Controllers.API
 {
@@ -11,7 +12,7 @@ namespace Google_MVC.Controllers.API
         public IActionResult Get()
         {
             var context = HttpContext;
-            return Ok(HttpContext.User.Claims);
+            return Ok(HttpContext.User.Claims.Select(x=> new { x.Type, x.Value}).ToList());
         }
     }
 
