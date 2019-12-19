@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
@@ -33,6 +34,8 @@ namespace Google_webAPI
         public void ConfigureServices(IServiceCollection services)
         {
             string value = default(string);
+
+            services.AddCors();
 
             services.AddAuthentication()
                     .AddCookie(ops => ops.LoginPath = "/api/values/login")
@@ -77,7 +80,15 @@ namespace Google_webAPI
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
             app.UseAuthentication();
+
+            app.UseCors(ops =>
+            {
+                ops.AllowAnyOrigin().AllowAnyMethod();
+            });
+
+
             app.UseHttpsRedirection();
             app.UseMvc();
         }
