@@ -1,0 +1,16 @@
+C:\Users\sovsh\Desktop\Testing Application\AuthTesting\GoogleWithMVC\Google_webAPI\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\sovsh\Desktop\Testing Application\AuthTesting\GoogleWithMVC\Google_webAPI\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\sovsh\Desktop\Testing Application\AuthTesting\GoogleWithMVC\Google_webAPI\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\sovsh\Desktop\Testing Application\AuthTesting\GoogleWithMVC\Google_webAPI\bin\Debug\netcoreapp2.2\Google_webAPI.deps.json
+C:\Users\sovsh\Desktop\Testing Application\AuthTesting\GoogleWithMVC\Google_webAPI\bin\Debug\netcoreapp2.2\Google_webAPI.runtimeconfig.json
+C:\Users\sovsh\Desktop\Testing Application\AuthTesting\GoogleWithMVC\Google_webAPI\bin\Debug\netcoreapp2.2\Google_webAPI.runtimeconfig.dev.json
+C:\Users\sovsh\Desktop\Testing Application\AuthTesting\GoogleWithMVC\Google_webAPI\bin\Debug\netcoreapp2.2\Google_webAPI.dll
+C:\Users\sovsh\Desktop\Testing Application\AuthTesting\GoogleWithMVC\Google_webAPI\bin\Debug\netcoreapp2.2\Google_webAPI.pdb
+C:\Users\sovsh\Desktop\Testing Application\AuthTesting\GoogleWithMVC\Google_webAPI\obj\Debug\netcoreapp2.2\Google_webAPI.csprojAssemblyReference.cache
+C:\Users\sovsh\Desktop\Testing Application\AuthTesting\GoogleWithMVC\Google_webAPI\obj\Debug\netcoreapp2.2\Google_webAPI.RazorAssemblyInfo.cache
+C:\Users\sovsh\Desktop\Testing Application\AuthTesting\GoogleWithMVC\Google_webAPI\obj\Debug\netcoreapp2.2\Google_webAPI.RazorAssemblyInfo.cs
+C:\Users\sovsh\Desktop\Testing Application\AuthTesting\GoogleWithMVC\Google_webAPI\obj\Debug\netcoreapp2.2\Google_webAPI.AssemblyInfoInputs.cache
+C:\Users\sovsh\Desktop\Testing Application\AuthTesting\GoogleWithMVC\Google_webAPI\obj\Debug\netcoreapp2.2\Google_webAPI.AssemblyInfo.cs
+C:\Users\sovsh\Desktop\Testing Application\AuthTesting\GoogleWithMVC\Google_webAPI\obj\Debug\netcoreapp2.2\Google_webAPI.RazorTargetAssemblyInfo.cache
+C:\Users\sovsh\Desktop\Testing Application\AuthTesting\GoogleWithMVC\Google_webAPI\obj\Debug\netcoreapp2.2\Google_webAPI.dll
+C:\Users\sovsh\Desktop\Testing Application\AuthTesting\GoogleWithMVC\Google_webAPI\obj\Debug\netcoreapp2.2\Google_webAPI.pdb
