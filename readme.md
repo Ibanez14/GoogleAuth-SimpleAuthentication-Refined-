@@ -1,5 +1,2 @@
-# Simple Google Authentication
+# Simple Google Authentication Refined
 
-
-- Get ClientID and ClientSecret from console.developers.google.com
-- services.AddAuthentication().AddGoogle(....) configure ClientId, ClientSecret, CallbackUrl
