@@ -30,8 +30,7 @@ namespace Google_MVC.Controllers.API
             //properties.Items.Add("LoginProvider", "Google");
             //return Challenge(properties, "Google");
         }
-
-
+            
         /// <summary>
         /// Redirect user to Login action
         /// </summary>

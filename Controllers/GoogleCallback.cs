@@ -11,7 +11,7 @@ namespace Google_MVC.Controllers.API
         public IActionResult Get()
         {
             var context = HttpContext;
-            return Ok("Ok.");
+            return Ok(HttpContext.User.Claims);
         }
     }
 

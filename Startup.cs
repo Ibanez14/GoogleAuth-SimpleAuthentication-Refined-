@@ -20,12 +20,14 @@ namespace Google_webAPI
 {
     public class Startup
     {
+
+        public IConfiguration Configuration { get; }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -38,13 +40,12 @@ namespace Google_webAPI
                     {
                         ops.ClientId = "1061433997967-955692qk7fe7lq58tn6vi0hl8ba7t1on.apps.googleusercontent.com";
                         ops.ClientSecret = "xq65BxymyUab6-vSVLIvR4ii";
-                        ops.CallbackPath = "/googlesignin";
+                        ops.CallbackPath = "/googlesignin"; 
 
                         ops.Events.OnCreatingTicket = context =>
                         {
                             context.HttpContext.User = context.Principal;
                             context.HttpContext.Response.Redirect("https://localhost:5051/googlesignin");
-
                             #region Leftovers
                             value = context.AccessToken;
 
